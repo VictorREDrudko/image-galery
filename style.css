@@ -138,6 +138,14 @@
 	margin: 0 20px 20px 20px;
 	align-self: center;
 	display: none;
+	background-color: #cf1ec6;
+	border-radius: 5px;
+	color: #f8f6f6;
+}
+
+.show-more:hover {
+	background-color: #f257ea;
+	transition: all 0.5s;
 }
 
 
