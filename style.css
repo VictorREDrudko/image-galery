@@ -4,22 +4,24 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-color: #565555;
+:active, :hover, :focus {
+	outline: 0;
+	outline-offset: 0;
 }
 
 .wrapper {
 	width:100%;
-	height: 100vh;
+	/* height: 100vh; */
 	background-color: #f8f8fa;
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
+	justify-content: space-between;
+	/* margin: 0 auto; */
 }
 
 .content {
 	width: 100%;
-	height: 93vh;
+	/* height: 93vh; */
 }
 
 .header__galery {
@@ -61,7 +63,7 @@ body {
 	top: 10px;
 	left: 0;
 	border-radius: 15px;
-	padding: 0 5px 0 10px;
+	padding: 0 35px 0 10px;
 	z-index: 1;
 	border: 1px solid rgb(104, 103, 103);
 	font-size: 18px;
@@ -74,17 +76,22 @@ body {
 	box-shadow: 0px 0px 10px rgb(74, 73, 73);
 }
 
+.input:focus {
+	box-shadow: 0px 0px 10px rgb(74, 73, 73);
+}
+
 
 .submit {
-	background: url('img/logo-search.png') 0 0/auto 100% no-repeat;
+	background: url('img/logo-search.png') 0 0/auto 70% no-repeat;
 	width: 37px;
 	height: 25px;
 	position: absolute;
-	left: 240px;
-	top: 12px;
+	left: 250px;
+	top: 17px;
 	z-index: 2;
 	border-radius: 10px;
 	border: none;
+	cursor: pointer;
 }
 
 
@@ -100,12 +107,45 @@ body {
 
 
 
+.images {
+	/* background-color: #45fa57; */
+	width: inherit;
+	/* height: 75vh; */
+	margin: 10px 0 0 0;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.img {
+	height: 45%;
+	width: 30%;
+	margin: 10px;
+}
+
+.gallery-img {
+	height: 45%;
+	width: 30%;
+	padding: 10px;
+	align-self: center;
+}
+
+
+.show-more {
+	width: 100px;
+	height: 30px;
+	margin: 0 20px 20px 20px;
+	align-self: center;
+	display: none;
+}
+
 
 
 
 footer {
-	width: 100%;
-	height: 7vh;
+	width: 98%;
+	height: 60px;
 	background-color: #e06ada;
 	display: flex;
 	justify-content: space-between;
